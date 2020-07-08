@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+
+</head>
+<body>
+    <h1>修改书籍页面</h1>
+    <a href="index.html"><button>返回首页</button></a><br>
+    
+    <!--  -->
+    <form action="./php/gai_tijiao.php" method="POST">
+        书名：<input type="text" name="name" placeholder="书名"><br>
+        作者：<input type="text" name="zuozhe" placeholder="作者"><br>
+        单价：<input type="text" name="price" placeholder=0><br>
+        数量：<input type="text" name="count" placeholder=0><br>
+        <textarea  cols="30" rows="10" name="jianjie" placeholder="简介"></textarea><br>
+        <textarea  cols="30" rows="15"  name="content" placeholder="内容"></textarea><br>
+        VIP：<input type="radio" name="vip" value="1" >是
+            <input type="radio" name="vip" value="0" checked>否
+        <button type="submit">提交</button>
+    </form>
+    <!--  -->
+    <script src="./js/gai.js"></script>
+</body>
+</html>
